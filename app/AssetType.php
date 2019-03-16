@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class asset_objects extends Model
+class AssetType extends Model
 {
     //
 }

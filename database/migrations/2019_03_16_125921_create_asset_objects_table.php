@@ -18,12 +18,14 @@ class CreateAssetObjectsTable extends Migration
             $table->string('code')->unique();
             $table->text('description')->nullable(true);
             $table->dateTime('purchase_date');
+            $table->unsignedInteger('asset_type')->nullable();
+            $table->foreign('asset_type')->references('id')->on('asset_types');
+            $table->unsignedInteger('asset_status')->nullable();
+            $table->foreign('asset_status')->references('id')->on('asset_statuses');
             $table->unsignedBigInteger('current_owner')->nullable();
             $table->foreign('current_owner')->references('id')->on('users');
             $table->unsignedBigInteger('updated_by')->nullable();
             $table->foreign('updated_by')->references('id')->on('users');
-            $table->unsignedBigInteger('asset_status')->nullable();
-            $table->foreign('asset_status')->references('id')->on('asset_statuses');
             $table->timestamps();
         });
     }

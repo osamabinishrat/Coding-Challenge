@@ -11,3 +11,4 @@ An application which provides a user with the list of available assets in the IT
 - ##### Run following commands on terminal:
     - composer install
     - php artisan key:generate
+    - php artisan migrate --seed
