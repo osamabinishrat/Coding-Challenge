@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-## Description
+### Description
 An application which provides a user with the list of available assets in the IT (laptops, phones, desktops, etc) with an overview of their status (available, in use, etc)
 
 ### Usage
