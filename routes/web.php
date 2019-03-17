@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
+Route::post('authenticate','Auth\LoginController@authenticate');
+
+Route::get('asset/listing', 'HomeController@index')->name('listing');
+Route::get('asset/details/{id}', 'HomeController@details')->name('details');
+
+Auth::routes();
