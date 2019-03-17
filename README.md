@@ -26,6 +26,8 @@ An application which provides a user with the list of available assets in the IT
 - ##### Asset Details Page
 ![alt text](https://i.ibb.co/m9SDxKr/3.png)
 
+#### Framework
+Laravel 5.8 (https://github.com/laravel/laravel)
 ## Trouble Shooting
 - In case application doesn't run properly, try running 'composer dump-autoload'
 
