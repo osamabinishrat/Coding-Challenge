@@ -27,7 +27,7 @@
                             <td><span class = "bg-success text-white" style="border-radius: 4px; padding: 2px 5px 2px 5px;">{{$object->status()}}</span></td>
                             <td>{{$object->owner()}}</td>
                             <td>{{\Carbon\Carbon::parse($object->purchase_date)->format('d M Y')}}</td>
-                            <td><a href="#">Details</a></td>
+                            <td><a href="{{URL::to('/asset/details'.'/'.$object->id)}}">Details</a></td>
                         </tr>
                         @endforeach
                         </tbody>

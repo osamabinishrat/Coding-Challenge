@@ -35,4 +35,14 @@ class AssetObject extends Model
         $owner =  $this->belongsTo(User::class, 'current_owner')->first();
         return ($owner)? $owner->name : 'N/A';
     }
+
+    /**
+     * Returns updated by user
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function updatedBy(){
+        $owner =  $this->belongsTo(User::class, 'updated_by')->first();
+        return ($owner)? $owner->name : 'N/A';
+    }
 }

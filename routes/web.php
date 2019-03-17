@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 Route::post('authenticate','Auth\LoginController@authenticate');
 
+Route::get('asset/listing', 'HomeController@index')->name('listing');
+Route::get('asset/details/{id}', 'HomeController@details')->name('details');
 
-Route::get('home', 'HomeController@index')->name('home');
 Auth::routes();
